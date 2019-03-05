@@ -1,4 +1,5 @@
 from SendEmail import SendEmail
+import time
 
 def run():
     email = SendEmail()
@@ -7,3 +8,5 @@ def run():
         motion = DetectMotion.observeRoom()
         if motion == 1:
             SendEmail.sendEmail()
+            time.sleep(5)
+            motion = 0
