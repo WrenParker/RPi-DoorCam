@@ -1,5 +1,9 @@
 from SendEmail import SendEmail
 
 def run():
-    mail = SendEmail()
-    mail.sendEmail()
+    email = SendEmail()
+    motionDetect = DetectMotion()
+    while True:
+        motion = DetectMotion.observeRoom()
+        if motion == 1:
+            SendEmail.sendEmail()

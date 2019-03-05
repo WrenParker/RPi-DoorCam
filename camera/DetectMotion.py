@@ -14,5 +14,8 @@ class DetectMotion:
 
     def observeRoom(self):
         if self.out == 1:
-            return self.out
             print('DetectMotion')
+            return self.out
+
+test = DetectMotion()
+test.observeRoom()
