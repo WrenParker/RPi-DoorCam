@@ -5,8 +5,8 @@ class DetectMotion:
 
     def __init__(self):
         self.pinIn = 11
-        self.out = GPIO.input(self.pinIn)
         self.setupGPIO()
+        self.out = GPIO.input(self.pinIn)
 
     def setupGPIO(self):
         GPIO.setup(self.pinIn,GPIO.IN)
