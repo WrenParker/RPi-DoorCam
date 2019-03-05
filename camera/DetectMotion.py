@@ -9,9 +9,8 @@ class DetectMotion:
         self.out = GPIO.input(self.pinIn)
 
     def setupGPIO(self):
-        GPIO.setup(self.pinIn,GPIO.IN)
         GPIO.setmode(GPIO.BOARD)
-
+        GPIO.setup(self.pinIn, GPIO.IN)
 
     def observeRoom(self):
         if self.out == 1:
