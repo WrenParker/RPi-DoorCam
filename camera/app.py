@@ -6,7 +6,7 @@ def run():
     email = SendEmail()
     motionDetect = DetectMotion()
     while True:
-        motion = DetectMotion.observeRoom()
+        motion = motionDetect.observeRoom()
         if motion == 1:
             SendEmail.sendEmail()
             time.sleep(5)
