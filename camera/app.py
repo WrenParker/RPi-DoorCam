@@ -1,4 +1,5 @@
 from SendEmail import SendEmail
+from DetectMotion import DetectMotion
 import time
 
 def run():
