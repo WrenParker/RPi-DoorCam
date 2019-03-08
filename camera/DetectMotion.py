@@ -8,6 +8,7 @@ class DetectMotion:
         self.setupGPIO()
 
     def setupGPIO(self):
+        GPIO.cleanup()
         GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         GPIO.setup(self.pinIn, GPIO.IN)
