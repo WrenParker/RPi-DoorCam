@@ -15,13 +15,13 @@ class Display:
         self.lcd = LCD.Adafruit_CharLCD(self.rs, self.en, self.d4, self.d5, self.d6, self.d7, self.backLight, self.columns, self.rows)
 
     def sayHello(self):
-        self.lcd = lcd
+        lcd = self.lcd
         lcd.home()
         lcd.message("ENEMY SPOTTED\n")
         lcd.message("Hello There!")
 
     def standBy(self):
-        self.lcd = lcd
+        lcd = self.lcd
         lcd.home()
         lcd.message("All Clear!")
 
