@@ -17,3 +17,4 @@ def run():
         else:
             motion = 0
             display.standBy()
+            time.sleep(2)
