@@ -4,7 +4,7 @@ import time
 class DetectMotion:
 
     def __init__(self):
-        self.pinIn = 11
+        self.pinIn = 23
         self.setupGPIO()
 
     def setupGPIO(self):
