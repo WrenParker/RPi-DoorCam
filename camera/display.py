@@ -24,6 +24,3 @@ class Display:
         lcd = self.lcd
         lcd.home()
         lcd.message("All Clear!")
-
-test = Display()
-test.sayHello()
