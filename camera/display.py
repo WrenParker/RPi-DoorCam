@@ -12,12 +12,7 @@ class Display:
         self.backLight = 4
         self.columns = 16
         self.rows = 2
-
-    def __main__(self):
-        pass
-    def setUp(self):
         self.lcd = LCD.Adafruit_CharLCD(self.rs, self.en, self.d4, self.d5, self.d6, self.d7, self.backLight, self.columns, self.rows)
-        lcd.home()
 
     def sayHello(self):
         lcd.home()
@@ -27,3 +22,6 @@ class Display:
     def standBy(self):
         lcd.home()
         lcd.message("All Clear!")
+
+test = Display()
+test.sayHello()
