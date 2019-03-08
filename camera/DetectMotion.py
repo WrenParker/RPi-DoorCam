@@ -15,6 +15,6 @@ class DetectMotion:
 
     def observeRoom(self):
         input = GPIO.input(self.pinIn)
-        if input == 0:
+        if input == 1:
             print('Enemy Spotted')
             return input
