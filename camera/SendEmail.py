@@ -7,7 +7,7 @@ class SendEmail:
         self.email = 'wrenparkercamera@gmail.com'
         self.password = 'Wi2JbAVS'
         self.context = ssl.create_default_context()
-        self.message = "Motion Detected"
+        self.message = "Enemy Spotted"
 
     def sendEmail(self):
         server = smtplib.SMTP('smtp.gmail.com', 587)
