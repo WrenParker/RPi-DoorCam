@@ -12,7 +12,7 @@ def run():
         if motion == 1:
             #email.sendEmail()
             display.sayHello()
-            time.sleep(1)
+            time.sleep(10*60)
             motion = 0
         else:
             motion = 0
