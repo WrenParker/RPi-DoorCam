@@ -19,4 +19,5 @@ class DetectMotion:
             return input
 
 test = DetectMotion()
-test.observeRoom()
+while True:
+    test.observeRoom()
