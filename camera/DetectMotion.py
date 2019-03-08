@@ -17,8 +17,3 @@ class DetectMotion:
         if input == 1:
             print('Enemy Spotted')
             return input
-
-test = DetectMotion()
-while True:
-    test.observeRoom()
-    time.sleep(1)
