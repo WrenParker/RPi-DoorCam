@@ -9,11 +9,11 @@ def run():
     display = Display()
     while True:
         motion = motionDetect.observeRoom()
-        if motion == 0:
+        if motion == 1:
             email.sendEmail()
             display.sayHello()
-            time.sleep(3)
+            time.sleep(10*60)
             motion = 0
         else:
-            motion = 1
+            motion = 0
             display.standBy()
